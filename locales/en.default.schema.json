@@ -1,0 +1,28 @@
+{
+  "settings_schema": {
+    "typography": {
+      "name": "Typography",
+      "settings": {
+        "heading_font": {
+          "content": "Headings",
+          "label": "Choose the font for headings",
+          "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+        },
+        "body_font": {
+          "content": "Body",
+          "label": "Choose the font for normal text",
+          "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+        }
+      }
+    },
+    "favicon": {
+      "name": "Favicon",
+      "settings": {
+        "favicon": {
+          "label": "Favicon image",
+          "info": "Will be scaled down to 32 x 32px"
+        }
+      }
+    }
+  }
+}

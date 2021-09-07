@@ -1,0 +1,48 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Basic Theme Essentials",
+    "theme_author": "Zenki Diaz",
+    "theme_version": "1.0",
+    "theme_documentation_url": "https://zenkidiaz.com",
+    "theme_support_email": "greyzenchance@gmail.com"
+  },
+  {
+    "name": "t:settings_schema.typography.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.heading_font.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "default": "akko_n3",
+        "label": "t:settings_schema.typography.settings.heading_font.label",
+        "info": "t:settings_schema.typography.settings.heading_font.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.body_font.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "body_font",
+        "default": "akko_n3",
+        "label": "t:settings_schema.typography.settings.body_font.label",
+        "info": "t:settings_schema.typography.settings.body_font.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.favicon.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.favicon.settings.favicon.label",
+        "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  }
+]

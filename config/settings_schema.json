@@ -8,40 +8,261 @@
     "theme_support_email": "greyzenchance@gmail.com"
   },
   {
-    "name": "t:settings_schema.typography.name",
+    "name": "Typography",
     "settings": [
       {
         "type": "header",
-        "content": "t:settings_schema.typography.settings.heading_font.content"
+        "content": "Headings"
       },
       {
         "type": "font_picker",
         "id": "heading_font",
         "default": "akko_n3",
-        "label": "t:settings_schema.typography.settings.heading_font.label",
-        "info": "t:settings_schema.typography.settings.heading_font.info"
+        "label": "Choose the font for headings",
+        "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
       },
       {
         "type": "header",
-        "content": "t:settings_schema.typography.settings.body_font.content"
+        "content": "Body"
       },
       {
         "type": "font_picker",
         "id": "body_font",
         "default": "akko_n3",
-        "label": "t:settings_schema.typography.settings.body_font.label",
-        "info": "t:settings_schema.typography.settings.body_font.info"
+        "label": "Choose the font for normal text",
+        "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts"
       }
     ]
   },
   {
-    "name": "t:settings_schema.favicon.name",
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "dominant_color",
+        "default": "#FFFFFF",
+        "label": "Dominant Color",
+        "info": "Brand color used in 60% of the design"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "default": "#121212",
+        "label": "Accent Color",
+        "info": "Used in 10% of the design to complement your dominant color"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Palette"
+      },
+      {
+        "type": "paragraph",
+        "content": "These are colors that make your UI stand out, complement your brand, or increase brand awareness. They're intentionally set to keep things fresh and interesting."
+      },
+      {
+        "type": "color",
+        "id": "secondary_color_1",
+        "default": "#FFF",
+        "label": "Secondary Color 1"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color_2",
+        "default": "#FFF",
+        "label": "Secondary Color 2"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color_3",
+        "default": "#FFF",
+        "label": "Secondary Color 3"
+      },
+      {
+        "type": "header",
+        "content": "Neutral Palette"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tints and shades of your brand colors that can be used in your design"
+      },
+      {
+        "type": "color",
+        "id": "light_neutral_1",
+        "default": "#FFF",
+        "label": "Light Neutral Color 1"
+      },
+      {
+        "type": "color",
+        "id": "light_neutral_2",
+        "default": "#FFF",
+        "label": "Light Neutral Color 2"
+      },
+      {
+        "type": "color",
+        "id": "light_neutral_3",
+        "default": "#FFF",
+        "label": "Light Neutral Color 3"
+      },
+      {
+        "type": "color",
+        "id": "dark_neutral_1",
+        "default": "#FFF",
+        "label": "Dark Neutral Color 1"
+      },
+      {
+        "type": "color",
+        "id": "dark_neutral_2",
+        "default": "#FFF",
+        "label": "Dark Neutral Color 2"
+      },
+      {
+        "type": "color",
+        "id": "dark_neutral_3",
+        "default": "#FFF",
+        "label": "Dark Neutral Color 3"
+      },
+      {
+        "type": "header",
+        "content": "Semantic Palette"
+      },
+      {
+        "type": "paragraph",
+        "content": "Use similar shades to the default colors below that complement your brand better. Don't choose farfetched shades because these colors are semantic"
+      },
+      {
+        "type": "color",
+        "id": "error_state_color",
+        "default": "#F00",
+        "label": "Negative or Error State"
+      },
+      {
+        "type": "color",
+        "id": "warning_color",
+        "default": "#FFA500",
+        "label": "Warnings"
+      },
+      {
+        "type": "color",
+        "id": "success_color",
+        "default": "#0F0",
+        "label": "Success"
+      },
+      {
+        "type": "color",
+        "id": "neutral_state_color",
+        "default": "#00F",
+        "label": "Information or Neutral State"
+      },
+      {
+        "type": "header",
+        "content": "Extended Palette"
+      },
+      {
+        "type": "paragraph",
+        "content": "Generally, a minimal color palette makes for better UI and UX. But if you think your design calls for it, you can put additional colors here for easier access"
+      },
+      {
+        "type": "color",
+        "id": "additional_color_1",
+        "label": "Additional Color 1"
+      },
+      {
+        "type": "color",
+        "id": "additional_color_2",
+        "label": "Additional Color 2"
+      },
+      {
+        "type": "color",
+        "id": "additional_color_3",
+        "label": "Additional Color 3"
+      },
+      {
+        "type": "color",
+        "id": "additional_color_4",
+        "label": "Additional Color 4"
+      },
+      {
+        "type": "color",
+        "id": "additional_color_5",
+        "label": "Additional Color 5"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
     "settings": [
       {
         "type": "image_picker",
         "id": "favicon",
-        "label": "t:settings_schema.favicon.settings.favicon.label",
-        "info": "t:settings_schema.favicon.settings.favicon.info"
+        "label": "Favicon Image",
+        "info": "Will be scaled down to 32 x 32px"
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Social Accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https://twitter.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https://facebook.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest",
+        "info": "https://pinterest.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "http://instagram.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "TikTok",
+        "info": "https://tiktok.com/@shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr",
+        "info": "https://shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "Snapchat",
+        "info": "https://www.snapchat.com/add/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "YouTube",
+        "info": "https://www.youtube.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo",
+        "info": "https://vimeo.com/shopify"
       }
     ]
   }

@@ -1,1 +1,186 @@
 <!-- Create your first section -->
+
+
+
+<!-- Custom Section Settings -->
+
+{% schema %}
+{
+  "name": "Custom Section Settings",
+  "blocks": [
+    {
+      "type": "sample-block",
+      "name": "Sample Block",
+      "settings": [
+        {
+          "type": "select",
+          "id": "background_color",
+          "options": [
+            {
+              "value": "bg-dominant-color",
+              "label": "Dominant Color"
+            },
+            {
+              "value": "bg-accent-color",
+              "label": "Accent Color"
+            },
+            {
+              "value": "bg-secondary-color-1",
+              "label": "Secondary Color 1"
+            },
+            {
+              "value": "bg-secondary-color-2",
+              "label": "Secondary Color 2"
+            },
+            {
+              "value": "bg-secondary-color-3",
+              "label": "Secondary Color 3"
+            },
+            {
+              "value": "bg-light-neutral-1",
+              "label": "Light Neutral 1"
+            },
+            {
+              "value": "bg-light-neutral-2",
+              "label": "Light Neutral 2"
+            },
+            {
+              "value": "bg-light-neutral-3",
+              "label": "Light Neutral 3"
+            },
+            {
+              "value": "bg-dark-neutral-1",
+              "label": "Dark Neutral 1"
+            },
+            {
+              "value": "bg-dark-neutral-2",
+              "label": "Dark Neutral 2"
+            },
+            {
+              "value": "bg-dark-neutral-3",
+              "label": "Dark Neutral 3"
+            },
+            {
+              "value": "bg-additional-color-1",
+              "label": "Additional Color 1"
+            },
+            {
+              "value": "bg-additional-color-2",
+              "label": "Additional Color 2"
+            },
+            {
+              "value": "bg-additional-color-3",
+              "label": "Additional Color 3"
+            },
+            {
+              "value": "bg-additional-color-4",
+              "label": "Additional Color 4"
+            },
+            {
+              "value": "bg-additional-color-5",
+              "label": "Additional Color 5"
+            }
+          ],
+          "default": "bg-dominant-color",
+          "label": "Background Color"
+        },
+        {
+          "type": "select",
+          "id": "foreground_color",
+          "options": [
+            {
+              "value": "fg-dominant-color",
+              "label": "Dominant Color"
+            },
+            {
+              "value": "fg-accent-color",
+              "label": "Accent Color"
+            },
+            {
+              "value": "fg-secondary-color-1",
+              "label": "Secondary Color 1"
+            },
+            {
+              "value": "fg-secondary-color-2",
+              "label": "Secondary Color 2"
+            },
+            {
+              "value": "fg-secondary-color-3",
+              "label": "Secondary Color 3"
+            },
+            {
+              "value": "fg-light-neutral-1",
+              "label": "Light Neutral 1"
+            },
+            {
+              "value": "fg-light-neutral-2",
+              "label": "Light Neutral 2"
+            },
+            {
+              "value": "fg-light-neutral-3",
+              "label": "Light Neutral 3"
+            },
+            {
+              "value": "fg-dark-neutral-1",
+              "label": "Dark Neutral 1"
+            },
+            {
+              "value": "fg-dark-neutral-2",
+              "label": "Dark Neutral 2"
+            },
+            {
+              "value": "fg-dark-neutral-3",
+              "label": "Dark Neutral 3"
+            },
+            {
+              "value": "fg-additional-color-1",
+              "label": "Additional Color 1"
+            },
+            {
+              "value": "fg-additional-color-2",
+              "label": "Additional Color 2"
+            },
+            {
+              "value": "fg-additional-color-3",
+              "label": "Additional Color 3"
+            },
+            {
+              "value": "fg-additional-color-4",
+              "label": "Additional Color 4"
+            },
+            {
+              "value": "fg-additional-color-5",
+              "label": "Additional Color 5"
+            }
+          ],
+          "default": "fg-dominant-color",
+          "label": "Text Color"
+        },
+        {
+          "type": "select",
+          "id": "font",
+          "options": [
+            {
+              "value": "heading-font",
+              "label": "Heading Font"
+            },
+            {
+              "value": "body-font",
+              "label": "Body Font"
+            }
+          ],
+          "default": "heading-font",
+          "label": "Font"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "sample-block"
+      }
+    ]
+  }
+}
+{% endschema %}

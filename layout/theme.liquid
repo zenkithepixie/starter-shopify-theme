@@ -38,7 +38,47 @@
 
     <!-- CSS -->
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% style %}
+      {{ settings.heading_font | font_face: font_display: 'swap' }}
+      {{ settings.body_font | font_face: font_display: 'swap' }}
+
+      :root {
+        /* Variables for Font Settings */
+        --heading-font-family: {{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }};
+        --heading-font-style: {{ settings.heading_font.style }};
+        --heading-font-weight: {{ settings.heading_font.weight }};
+
+        --body-font-family: {{ settings.body_font.family }}, {{ settings.body_font.fallback_families }};
+        --body-font-style: {{ settings.body_font.style }};
+        --body-font-weight: {{ settings.body_font.weight }};
+
+        /* Variables for Color Settings */
+        --dominant-color: {{ settings.dominant_color }};
+        --accent-color: {{ settings.accent_color }};
+        --secondary-color-1: {{ settings.secondary_color_1 }};
+        --secondary-color-2: {{ settings.secondary_color_2 }};
+        --secondary-color-3: {{ settings.secondary_color_3 }};
+        --light-neutral-1: {{ settings.light_neutral_1 }};
+        --light-neutral-2: {{ settings.light_neutral_2 }};
+        --light-neutral-3: {{ settings.light_neutral_3 }};
+        --dark-neutral-1: {{ settings.dark_neutral_1 }};
+        --dark-neutral-2: {{ settings.dark_neutral_2 }};
+        --dark-neutral-3: {{ settings.dark_neutral_3 }};
+        --error-state-color: {{ settings.error_state_color }};
+        --warning-color: {{ settings.warning_color }};
+        --success-color: {{ settings.success_color }};
+        --neutral-state-color: {{ settings.neutral_state_color }};
+        --additional-color-1: {{ settings.additional_color_1 }};
+        --additional-color-2: {{ settings.additional_color_2 }};
+        --additional-color-3: {{ settings.additional_color_3 }};
+        --additional-color-4: {{ settings.additional_color_4 }};
+        --additional-color-5: {{ settings.additional_color_5 }};
+
+      }
+
+    {% endstyle %}
+
+    {{ 'main.css' | asset_url | stylesheet_tag }}
 
     <!-- Custom Fonts -->
 
